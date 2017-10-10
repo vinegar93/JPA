@@ -14,8 +14,8 @@ public class ManyToOneTest {
 	@Test
 	public void save() {
 		EntityManagerFactory emfactory = Persistence.createEntityManagerFactory("JPA07");
-	   	EntityManager entitymanager = emfactory.createEntityManager( );
-	   	entitymanager.getTransaction( ).begin( );
+	   	EntityManager entitymanager = emfactory.createEntityManager();
+	   	entitymanager.getTransaction().begin();
 	   	Department department = new Department();
 	   	department.setName("Development");
 	   	entitymanager.persist(department);

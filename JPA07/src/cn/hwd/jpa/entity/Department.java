@@ -9,7 +9,7 @@ import javax.persistence.Id;
 public class Department {
 
 	@Id 
-    @GeneratedValue( strategy=GenerationType.AUTO )
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int id;
     private String name;
 	public int getId() {
